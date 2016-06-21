@@ -1,0 +1,33 @@
+html,
+body {
+	background-color: #fff04c;
+	height: 100%;
+}
+
+.block {
+	text-align: center;
+
+	/* May want to do this if there is risk the container may be narrower than the element inside */
+	white-space: nowrap;
+	height: 100%;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+	content: '';
+	display: inline-block;
+	height: 80%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.centered {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	max-width: 758px;
+}
+
+img {
+	width: 100%;
+}
