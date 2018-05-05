@@ -6,7 +6,7 @@ var spread = 4;
 var size = 1;
 var minDistance = 2.5;
 
-var svgElement = document.querySelector(svgId);
+var logo = document.querySelector('.logo');
 var klangImage = document.querySelector('.klang-mockup');
 
 function draw() {
@@ -61,7 +61,7 @@ function distance(point0, point1) {
 
 setTimeout(function () {
 	klangImage.classList.add('in');
-	svgElement.classList.add('in');
+	logo.classList.add('in');
 }, 5000);
 
 draw();
