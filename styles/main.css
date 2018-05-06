@@ -121,10 +121,18 @@ a {
 	text-align: center;
 	font-size: 2vh;
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.15);
+	color: #E7B95F;
 	letter-spacing: 1px;
+	font-weight: 300;
+	text-transform: uppercase;
 	z-index: 1000;
 	transform: translate(-50%, 0);
+}
+
+a span {
+	position: relative;
+	top: 0.25vh;
+	font-size: 3vh;
 }
 
 a:hover,
@@ -133,4 +141,16 @@ a:visited,
 a:active {
 	text-decoration: none;
 	color: #E7B95F;
+}
+
+@media (orientation: portrait) {
+	svg {
+		position: relative;
+		width: 60%;
+		top: 45%;
+		left: 50%;
+		overflow: visible;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
 }
