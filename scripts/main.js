@@ -8,6 +8,7 @@ var minDistance = 2.5;
 
 var logo = document.querySelector('.logo');
 var klangImage = document.querySelector('.klang-mockup');
+var backgroundHighlight = document.querySelector('.background-highlight');
 
 function draw() {
 	points = [];
@@ -62,6 +63,7 @@ function distance(point0, point1) {
 setTimeout(function () {
 	klangImage.classList.add('in');
 	logo.classList.add('in');
+	backgroundHighlight.classList.add('in');
 }, 5000);
 
 draw();
