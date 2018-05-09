@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1400 1400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="klang-mockup-front" transform="matrix(1,0,0,1,316,12)">
+        <g transform="matrix(1,-0,-0,1,-316,-12)">
+            <use xlink:href="#_Image1" x="316" y="12" width="768px" height="1376px"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,2.70808,1.622)">
+        <circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,225.994,234.469)">
+        <circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,225.884,547.673)">
+        <circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,15.3398,629.987)">
+        <circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,438.75,630.499)">
+        <circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    </g>
+    <path d="M517.076,1083.45C473.761,1083.45 438.595,1048.29 438.595,1004.97C438.595,961.658 473.761,926.492 517.076,926.492C517.076,926.492 885.338,926.492 885.338,926.492C928.653,926.492 963.819,961.658 963.819,1004.97C963.819,1048.29 928.653,1083.45 885.338,1083.45L517.076,1083.45Z" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M424.522,1298.26C381.44,1297.98 346.548,1262.92 346.548,1219.78C346.548,1176.46 381.714,1141.3 425.029,1141.3L978.001,1141.3L978.508,1141.3C1021.59,1141.57 1056.48,1176.63 1056.48,1219.78C1056.48,1263.09 1021.32,1298.26 978.001,1298.26L425.029,1298.26L424.522,1298.26Z" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M427.142,135.653L381.206,89.717L211.702,89.717" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M648.909,369.771L606.833,327.695L211.702,327.695" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M648.909,682.881L489.346,523.318L211.702,523.318" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M451.299,756.199L377.981,682.881L211.702,682.881" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M949.866,756.199L986.525,719.54L1177.24,719.54" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M459.782,951.36L430.306,921.883L211.702,921.883" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <path d="M372.691,1161.31L268.986,1057.61L211.702,1057.61" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
+    <g transform="matrix(1,0,0,1,76.3205,-128.759)">
+        <text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">1</text>
+    </g>
+    <g transform="matrix(1,0,0,1,76.3205,106.818)">
+        <text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">2</text>
+    </g>
+    <g transform="matrix(1,0,0,1,76.3205,302.743)">
+        <text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">3</text>
+    </g>
+    <g transform="matrix(1,0,0,1,76.3205,465.583)">
+        <text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">4</text>
+    </g>
+    <g transform="matrix(1,0,0,1,76.3205,705.079)">
+        <text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">6</text>
+    </g>
+    <g transform="matrix(1,0,0,1,76.3205,838.841)">
+        <text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">7</text>
+    </g>
+    <g transform="matrix(1,0,0,1,1094.71,501.83)">
+        <text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">5</text>
+    </g>
+    <defs>
+        <image id="_Image1" width="768px" height="1376px" xlink:href="images/klang-mockup-front.png"/>
+    </defs>
+</svg>

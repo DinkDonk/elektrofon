@@ -8,10 +8,76 @@ body {
 	background-color: #191E1B;
 	color: white;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	/*overflow: hidden;*/
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+section:first-child {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
 	overflow: hidden;
 }
 
-svg {
+section:nth-child(2) {
+	display: block;
+	/*width: 100%;*/
+	background: #98A98F;
+	text-align: center;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	color: #191E1B;
+	background-image: linear-gradient(-45deg, #98A98F, #B7B590);
+}
+
+section:nth-child(2) img {
+	width: 10%;
+}
+
+section:nth-child(3) {
+	display: block;
+	width: 100%;
+	background-color: #191E1B;
+	background-image: radial-gradient(circle at 25% 20%, rgba(152, 169, 143, 0.15) 0%, transparent 60%);
+	text-align: center;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	overflow: auto;
+}
+
+h1 {
+	color: #1A1D1A;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+sup {
+	font-size: 0.5em;
+}
+
+p {
+	font-size: 2em;
+}
+
+section:nth-child(3) > div > img {
+	width: 66.666%;
+}
+
+section:nth-child(3) > div {
+	display: block;
+	width: 40%;
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#logo-type {
 	position: relative;
 	width: 33.333%;
 	top: 45%;
@@ -19,6 +85,43 @@ svg {
 	overflow: visible;
 	transform: translate(-50%, -50%);
 	z-index: 1;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+li {
+	position: relative;
+	counter-increment: li;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+	padding-left: 20px;
+	max-width: 75%;
+}
+
+li:before {
+	position: absolute;
+	left: -40px;
+	top: -8px;
+	display: inline-block;
+	content: counter(li);
+	color: #191E1B;
+	background: #E3BC3D;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 1.8em;
+	text-align: center;
+	line-height: 40px;
+}
+
+i {
+	color: #E3BC3D;
+	font-style: normal;
 }
 
 .logo {
@@ -45,12 +148,12 @@ svg {
 	opacity: 1;
 }
 
-path {
+#logo-type path {
 	fill: none;
 	stroke: none;
 }
 
-circle {
+#logo-type circle {
 	/*fill: black;*/
 	fill: #2A90B0;
 	transform-origin: center;
@@ -59,8 +162,8 @@ circle {
 	transition: transform 4s cubic-bezier(0.680, -0.550, 0.265, 1.0), fill 5s;
 }
 
-circle.in {
-	fill: #E7B95F;
+#logo-type circle.in {
+	fill: #E3BC3D;
 	transform: rotate(-120deg) scale(1, -1);
 }
 
@@ -144,7 +247,7 @@ a {
 	text-align: center;
 	font-size: 2vh;
 	text-decoration: none;
-	color: #E7B95F;
+	color: #E3BC3D;
 	letter-spacing: 1px;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -163,11 +266,11 @@ a:focus,
 a:visited,
 a:active {
 	text-decoration: none;
-	color: #E7B95F;
+	color: #E3BC3D;
 }
 
 @media (orientation: portrait) {
-	svg {
+	#logo-type svg {
 		position: relative;
 		width: 60%;
 		top: 45%;
@@ -175,5 +278,23 @@ a:active {
 		overflow: visible;
 		transform: translate(-50%, -50%);
 		z-index: 1;
+	}
+
+	section:nth-child(3) > div {
+		display: block;
+		width: 80%;
+		float: left;
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-bottom: 10vw;
+	}
+
+	ul {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+
+	li {
+		max-width: none;
 	}
 }

@@ -22,7 +22,7 @@ function draw() {
 
 		for (var i1 = 0, l1 = count; i1 <= l1; i1++) {
 			var point = pathNode.getPointAtLength((length / count) * i1);
-			var circles = document.querySelectorAll('circle');
+			var circles = document.querySelectorAll(svgId + ' circle');
 			var toClose = false;
 
 			for (var i2 = 0, l2 = points.length; i2 < l2; i2++) {
