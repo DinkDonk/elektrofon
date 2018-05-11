@@ -275,14 +275,21 @@ section:nth-child(1) a:active {
 }
 
 @media (orientation: portrait) {
-	#logo-type svg {
-		position: relative;
+	#logo-type {
 		width: 60%;
 		top: 45%;
 		left: 50%;
 		overflow: visible;
 		transform: translate(-50%, -50%);
 		z-index: 1;
+	}
+
+	section:nth-child(2) img {
+		width: 25%;
+	}
+
+	section:nth-child(2) p {
+		font-size: 1.2em;
 	}
 
 	section:nth-child(3) > div {
@@ -296,6 +303,10 @@ section:nth-child(1) a:active {
 
 	section:nth-child(3) > div:last-child {
 		width: 80%;
+	}
+
+	h1 {
+		font-size: 2em;
 	}
 
 	ul {
