@@ -70,9 +70,9 @@ function newsletterSignup() {
 		}
 	};
 
-	xhttp.open('POST', 'https://api.loopify.com/flows/5b05c5a16149380005ab14cb/api-entries/af220351-4ae6-44c2-a082-0854c54b0646/map', true);
-	xhttp.setRequestHeader('Content-Type', 'application/json');
-	xhttp.send(JSON.stringify({email: document.querySelector('input[type="email"]').value}));
+	xhttp.open('POST', 'https://api.loopify.com/flows/5b05c5a16149380005ab14cb/external-forms/fce2d6cb-9a2c-451d-88db-7b2acffd2777/26/map', true);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send('email=' +  document.querySelector('input[type="email"]').value));
 }
 
 setTimeout(function () {
