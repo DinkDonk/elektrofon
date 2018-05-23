@@ -67,7 +67,7 @@ function newsletterSignup() {
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
 			document.querySelector('form label').innerHTML = 'Thank you!';
-			document.querySelector('form input').style.display = 'none';
+			document.querySelector('form').classList.add('submitted');
 		}
 	};
 

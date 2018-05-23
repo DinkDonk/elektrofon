@@ -327,6 +327,10 @@ form input[type="button"] {
 	cursor: pointer;
 }
 
+form.submitted input {
+	display: none !important;
+}
+
 @media (orientation: portrait) {
 	#logo-type {
 		width: 60%;
