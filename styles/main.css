@@ -168,34 +168,6 @@ i {
 	transform: rotate(-120deg) scale(1, -1);
 }
 
-button {
-	position: absolute;
-	bottom: 30px;
-	right: 30px;
-	padding: 15px;
-	font-size: 18px;
-}
-
-form {
-	position: absolute;
-	bottom: 30px;
-	left: 30px;
-}
-
-.form-control {
-	display: inline-block;
-}
-
-input {
-	width: 100px;
-	padding: 15px;
-	font-size: 18px;
-}
-
-label {
-	display: block;
-}
-
 .hidden {
 	display: none;
 }
@@ -281,9 +253,9 @@ hr {
 }
 
 form {
-	display: none;
+	display: block;
 	position: relative;
-	margin-top: 5em;
+	margin-top: 3em;
 }
 
 form label {
@@ -296,6 +268,7 @@ form label {
 form input {
 	display: inline-block;
 	width: 33.3333%;
+	padding: 15px;
 	font-size: 1.5em;
 	color: #B7B590;
 	border: 1px dotted #B7B590;
@@ -373,5 +346,10 @@ form.submitted input {
 
 	li {
 		max-width: none;
+	}
+
+	form input {
+		display: inline-block;
+		width: 50%;
 	}
 }
