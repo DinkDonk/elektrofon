@@ -9,6 +9,7 @@ var minDistance = 2.5;
 var logo = document.querySelector('.logo');
 var klangImage = document.querySelector('.klang-mockup');
 var backgroundHighlight = document.querySelector('.background-highlight');
+var signupButton = document.querySelector('input[type="button"]');
 
 function draw() {
 	points = [];
@@ -60,10 +61,26 @@ function distance(point0, point1) {
 	return Math.sqrt(Math.pow(point0.x - point1.x, 2) + Math.pow(point0.y - point1.y, 2));
 }
 
+function newsletterSignup() {
+	var xhttp = new XMLHttpRequest();
+
+	xhttp.onreadystatechange = function () {
+		if (this.readyState == 4 && this.status == 200) {
+			document.getElementById("demo").innerHTML = xhttp.responseText;
+		}
+	};
+
+	xhttp.open('POST', 'https://api.loopify.com/flows/5b05c5a16149380005ab14cb/api-entries/af220351-4ae6-44c2-a082-0854c54b0646/map', true);
+	xmlhttp.setRequestHeader('Content-Type', 'application/json');
+	xhttp.send(JSON.stringify({email: document.querySelector('input[type="email"]').value}));
+}
+
 setTimeout(function () {
 	klangImage.classList.add('in');
 	logo.classList.add('in');
 	backgroundHighlight.classList.add('in');
 }, 5000);
+
+signupButton.addEventListener('click', newsletterSignup);
 
 draw();

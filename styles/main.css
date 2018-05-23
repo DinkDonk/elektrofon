@@ -274,6 +274,59 @@ section:nth-child(1) a:active {
 	color: #E3BC3D;
 }
 
+hr {
+	border: none;
+	height: 1px;
+	background: #98A98F;
+}
+
+form {
+	display: none;
+	position: relative;
+	margin-top: 5em;
+}
+
+form label {
+	display: block;
+	margin-bottom: 1em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+form input {
+	display: inline-block;
+	width: 33.3333%;
+	font-size: 1.5em;
+	color: #B7B590;
+	border: 1px dotted #B7B590;
+	background: #191E1B;
+}
+
+form input:focus {
+	outline: none;
+}
+
+form input:focus:invalid {
+	border: 1px solid #E18256;
+	outline: 3px solid #E18256;
+	color: #E18256;
+}
+
+form:invalid input[type="button"] {
+	display: none;
+}
+
+form input[type="button"] {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	border: 1px solid #66ADA9;
+	font-weight: bold;
+	color: #191E1B;
+	background: #66ADA9;
+	cursor: pointer;
+}
+
 @media (orientation: portrait) {
 	#logo-type {
 		width: 60%;
