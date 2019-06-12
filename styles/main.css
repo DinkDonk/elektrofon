@@ -87,14 +87,43 @@ section:nth-child(3) > div:last-child {
 	z-index: 1;
 }
 
-ul {
+ul, ol {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	text-align: left;
 }
 
-li {
+ul {
+	margin-bottom: 2em;
+}
+
+ul li {
+	text-align: center;
+	font-size: 22px;
+}
+
+ul li.header {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+li a {
+	font-style: none;
+	text-decoration: none;
+	transition: color 300ms;
+}
+
+li a:hover {
+	color: #E3BC3D;
+	transition: color 50ms;
+}
+
+li.header:nth-of-type(even) {
+	margin-top: 1em;
+}
+
+ol li {
 	position: relative;
 	counter-increment: li;
 	margin-bottom: 40px;
@@ -103,7 +132,7 @@ li {
 	max-width: 75%;
 }
 
-li:before {
+ol li:before {
 	position: absolute;
 	left: -50px;
 	top: -10px;
