@@ -119,6 +119,10 @@ li a:hover {
 	transition: color 50ms;
 }
 
+li a[href="#"] {
+	pointer-events: none;
+}
+
 li.header:nth-of-type(even) {
 	margin-top: 1em;
 }
