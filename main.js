@@ -1,10 +1,17 @@
-const windowWidth = document.documentElement.clientWidth;
-const windowHeight = document.documentElement.clientHeight;
+let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight;
 const stagger = '-=0.44';
 const ease = 'power1.inOut';
 
+// Cheap fix for macbook pro XDR display
+if (window.screen.height * window.devicePixelRatio == 2234) {
+	windowHeight = windowHeight * window.devicePixelRatio;
+}
+
 let largestWindowDimension = () => Math.max(windowWidth, windowHeight);
 let randomPositiveOffset = () => Math.random() * (largestWindowDimension() / 4) + (largestWindowDimension() / 3);
+
+console.log(window.devicePixelRatio, largestWindowDimension(), window.innerHeight, window.visualViewport.height, screen.availHeight, window.screen.height);
 
 fetch('/assets/klang.svg')
 .then(response => response.text())

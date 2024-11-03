@@ -16,6 +16,7 @@ body {
 	background-color: gainsboro;
 	overflow-x: hidden;
 	font-family: 'Booton';
+	min-height: 100vh;
 }
 
 #intro {
