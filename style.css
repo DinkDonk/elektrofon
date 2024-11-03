@@ -1,0 +1,304 @@
+@font-face {
+	font-family: 'Booton';
+	font-style: normal;
+	src: url('/assets/BootonUprightVF.woff2') format('woff2');
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-synthesis: none !important;
+}
+
+html,
+body {
+	display: grid;
+	background-color: gainsboro;
+	overflow-x: hidden;
+	font-family: 'Booton';
+}
+
+#intro {
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	background-color: gainsboro;
+}
+
+#logo {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	padding: 4em;
+}
+
+#klang-container {
+	display: grid;
+	position: relative;
+	width: 80%;
+	max-width: 70em;
+	height: auto;
+	transform: rotate(10deg);
+	margin: auto;
+}
+
+#klang-container img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -47.3%);
+	width: 99.5%;
+	height: auto;
+	mask-repeat: no-repeat;
+	mask-size: 500% 500%;
+	mask-position: 100% 100%;
+	mask-image: radial-gradient(black 10%, transparent 20%);
+}
+
+#klang-container svg {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+	height: auto;
+}
+
+header {
+	position: relative;
+	display: grid;
+	overflow: hidden;
+	margin-top: -25%;
+}
+
+header svg {
+	position: relative;
+	fill: gainsboro;
+	fill: #040303;
+}
+
+header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+section:not(.guide) {
+	position: relative;
+	display: grid;
+	background-color: gainsboro;
+	justify-items: start;
+	align-items: center;
+	align-content: start;
+	gap: 4em;
+	z-index: 1;
+	color: #040303;
+	padding: 4em 2em;
+}
+
+section.description {
+	background-color: #040303;
+	color: gainsboro;
+	font-size: 1.3em;
+	margin-top: -0.7em;
+	padding: 3em 2.5em;
+	text-align: center;
+	justify-items: center;
+	font-size: 3vw;
+}
+
+section.description p {
+	font-size: 4vw;
+}
+
+section.overview {
+	grid-template-columns: 2fr 1fr;
+	background-color: gainsboro;
+	padding-top: 8em;
+	padding-bottom: 12em;
+	max-width: 80em;
+	justify-self: center;
+}
+
+section.overview p {
+	grid-column: 1;
+	max-width: 24em;
+	border-left: 1em solid #040303;
+	padding: 0;
+	padding-left: 1em;
+	margin: 0;
+	font-size: 2em;
+}
+
+section.overview figure {
+	position: relative;
+	grid-row: 1 / 4;
+	grid-column: 2;
+}
+
+section.overview img {
+	display: block;
+	position: relative;
+	width: 200%;
+	height: auto;
+}
+
+section.spesifications {
+	justify-self: center;
+	max-width: 80em;
+}
+
+section.spesifications p {
+	font-size: 1.3em;
+	margin-top: 1em;
+}
+
+section.availability {
+	justify-self: center;
+	max-width: 80em;
+	margin-bottom: 8em;
+}
+
+.guide {
+	display: grid;
+	justify-items: center;
+	align-content: center;
+	padding: 0;
+	background-color: gainsboro;
+}
+
+.guide figure {
+	display: grid;
+	gap: 4em;
+	min-height: 100vh;
+	grid-template-rows: 2fr 0fr;
+	justify-items: center;
+	align-items: center;
+	transition: 1s grid-template-rows ease;
+}
+
+.guide.split figure {
+	grid-template-rows: 2fr 1fr;
+}
+
+.guide figure > div {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	max-height: 66vh;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	padding-top: 0;
+	transition: 1s padding-top ease;
+}
+
+.guide figure > div svg {
+	width: auto;
+	height: 100%;
+}
+
+.guide.split figure > div {
+	padding-top: 4em;
+}
+
+.guide figcaption {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	height: 100%;
+	justify-self: start;
+}
+
+.guide article {
+	display: grid;
+	justify-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 0 4em;
+}
+
+.guide article .panel-content {
+	max-width: 80em;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.guide p {
+	margin: 0;
+}
+
+.guide p strong {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 700;
+}
+
+p {
+	font-size: 2em;
+}
+
+p strong {
+	font-weight: 700;
+}
+
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+    font-size: 2em;
+}
+
+th {
+    border: 1px solid gray;
+    background-color: white;
+    color: #000000;
+    padding: 0.5em;
+}
+
+td {
+    border: 1px solid gray;
+    color: #000000;
+    padding: 0.5em;
+}
+
+td:first-child {
+	font-weight: 700;
+}
+
+footer {
+	display: grid;
+	width: 100%;
+	background-color: #040303;
+	min-height: 20em;
+	align-items: center;
+	justify-items: center;
+	padding: 4em 2em;
+	color: gainsboro;
+}
+
+footer .logo {
+	width: 100%;
+	max-width: 40em;
+}
+
+footer p {
+	font-size: 1.3em;
+}

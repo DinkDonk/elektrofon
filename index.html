@@ -1,188 +1,156 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>elektrofon</title>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Elektrofon</title>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/images/favicons/site.webmanifest">
-	<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e3bc3d">
-	<link rel="shortcut icon" href="/images/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#191e1b">
-	<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#e3bc3d">
+		<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#191e1b">
+		<meta name="msapplication-config" content="/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 
-	<link rel=stylesheet href="styles/main.css?v=1.3">
+		<link rel="preload" href="/assets/BootonUprightVF.woff2" as="font" type="font/woff2" crossorigin>
 
-	<script src="https://d3js.org/d3.v4.min.js"></script>
-</head>
-<body>
-	<section>
-		<div class="background-highlight"></div>
+		<link rel="stylesheet" href="/style.css?v=8">
+	</head>
+	<body>
+		<div id="intro">
+			<img id="logo" src="assets/elektrofon.svg" alt="">
 
-		<div class="logo">
-			<svg id="logo-type" width="100%" height="100%" viewBox="0 0 446 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
-				<!-- e -->
-				<path d="M43.197,62.596C38.936,68.839 32.104,72.888 24.408,72.888C11.505,72.888 1.029,61.503 1.029,47.479C1.029,33.456 11.505,22.07 24.408,22.07C37.312,22.07 47.788,33.456 47.788,47.479L1,47.479"/>
+			<div id="klang-container">
+				<div class="svg-container"></div>
+				<img src="/assets/klang-1920w.png" alt="Klang">
+			</div>
+		</div>
 
-				<!-- l -->
-				<path d="M63.067,1.362L63.067,64.337C63.067,64.337 62.936,76.472 76.23,71.412"/>
-
-				<!-- e -->
-				<path d="M124.997,62.596C120.735,68.839 113.903,72.888 106.208,72.888C93.305,72.888 82.829,61.503 82.829,47.479C82.829,33.456 93.305,22.07 106.208,22.07C119.112,22.07 129.588,33.456 129.588,47.479L82.8,47.479"/>
-
-				<!-- k -->
-				<path d="M144.343,1.361L144.343,72.223"/>
-				<path d="M144.173,56.525L180.891,22.336"/>
-				<path d="M159.737,42.033L181.609,72.486"/>
-
-				<!-- t -->
-				<path d="M197.685,5.068L197.685,64.337C197.685,64.337 197.455,77.518 214.17,70.19"/>
-				<path d="M189.772,22.737L209.219,22.737"/>
-
-				<!-- r -->
-				<path d="M226.188,72.888L226.188,22.336"/>
-				<path d="M246.171,22.708C246.171,22.708 226.183,27.094 226.188,49.584C226.188,52.973 226.188,72.884 226.188,72.884"/>
-
-				<!-- o -->
-				<path d="M276.404,22.07C289.962,22.07 299.779,33.425 299.779,47.41C299.779,61.395 289.305,72.749 276.404,72.749C263.503,72.749 253.03,61.395 253.03,47.41C253.03,33.425 263.503,22.07 276.404,22.07Z"/>
-
-				<!-- f -->
-				<path d="M317.94,72.512L317.94,15.326C317.94,15.326 317.781,-5.481 338.077,3.056"/>
-				<path d="M309.843,29.062L329.538,29.062"/>
-
-				 <!-- o -->
-				<path d="M366.909,22.07C381.01,22.19 390.284,33.425 390.284,47.41C390.284,61.395 379.81,72.749 366.909,72.749C354.009,72.749 343.535,61.395 343.535,47.41C343.535,33.425 354.009,21.961 366.909,22.07Z"/>
-
-				<!-- n -->
-				<path d="M405.909,72.223L405.913,22.336"/>
-				<path d="M405.913,72.293L405.913,47.146C405.913,47.146 405.134,28.197 426.045,22.518C444.552,17.492 444.118,45.679 444.138,45.698C444.157,45.717 444.138,72.536 444.138,72.536"/>
+		<header>
+			<svg width="100%" height="100%" viewBox="0 0 754 175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+				<path d="M146.369,8.542L146.369,2.309L96.387,2.309L48.482,70.183L46.635,70.183L46.635,2.309L0,2.309L0,171.764L46.635,171.764L46.635,131.825L63.719,110.7L96.733,171.764L148.101,171.764L148.101,165.646L95.348,71.684L146.369,8.542Z" style="fill-rule:nonzero;"/>
+				<path d="M154.766,171.764L265.582,171.764L265.582,134.595L201.401,134.595L201.401,2.309L154.766,2.309L154.766,171.764Z" style="fill-rule:nonzero;"/>
+				<path d="M273.201,165.646L273.201,171.764L316.373,171.764L326.3,136.326L377.437,136.326L386.21,171.764L432.152,171.764L432.152,165.646L377.899,2.309L326.646,2.309L273.201,165.646ZM336.92,99.157L350.772,49.636L352.157,49.636L366.817,99.157L336.92,99.157Z" style="fill-rule:nonzero;"/>
+				<path d="M439.717,171.764L486.352,171.764L486.352,73.877L488.083,73.877L535.18,171.764L590.819,171.764L590.819,2.309L544.184,2.309L544.184,100.196L542.452,100.196L495.702,2.309L439.717,2.309L439.717,171.764Z" style="fill-rule:nonzero;"/>
+				<path d="M683.231,174.073C711.743,174.073 737.369,162.53 753.761,146.138L753.761,98.58C753.761,83.804 745.45,73.3 730.674,73.3L679.076,73.3L679.076,110.469L709.319,110.469L709.319,129.747C704.587,133.441 696.506,137.481 683.231,137.481C660.145,137.481 645.947,118.896 645.947,87.036C645.947,56.678 659.914,36.592 682.077,36.592C696.622,36.592 704.125,44.788 707.588,55.985L753.761,46.75C746.72,17.315 722.479,0 682.077,0C631.056,0 596.888,36.246 596.888,87.036C596.888,137.942 633.711,174.073 683.231,174.073Z" style="fill-rule:nonzero;"/>
 			</svg>
+		</header>
 
-			<a href="mailto:hello@elektrofon.no">hello<span>@</span>elektrofon.no</a>
-		</div>
+		<section class="description">
+			<p><strong>KLANG</strong> is a four voice polyphonic&nbsp;controller.<br/>It stores, traverses and manipulates chord progressions.</p>
+		</section>
 
-		<div class="klang-mockup">
-			<img src="images/klang-mockup.png?v=2" alt="klang">
-		</div>
-	</section>
+		<section class="overview">
+			<p>Allthough it was designed as a tool for making polyphony more accessible in Eurorack – It can be used for many other purposes. Think of it as a four channel sequencer and use it to inject precission voltages wherever you need them.</p>
+			<p><strong>KLANG</strong> is inherently musical. It speaks tonal cents and defaults to the twelve note chromatic scale.<br/>If you wish you can go between semitones and play with microtonality or dial in those specific sweetspots on your favorite filter.</p>
+			<p>All of <strong>KLANG</strong>s functionality is available without any form of menu diving. Everything is front and center and every function has dedicated inputs or controls.</p>
 
-	<section>
-		<img src="images/logo.svg" alt="">
-		<h1>Elektrofon – Klang <sup>14hp</sup></h1>
+			<figure>
+				<img src="/assets/klang-front.png" alt="Klang">
+			</figure>
+		</section>
 
-		<p><strong>«Klang» is a 4 voice polyphonic controller.<br>It stores, traverses and manipulates chord progressions.</strong></p>
-		<p>A prototype was shown at <a href="https://www.youtube.com/watch?v=hytuzCyyxoE" target="_blank">Superbooth18</a><br>Available now at these modular shops:</p>
+		<section class="spesifications">
+			<h1>Spesifications</h1>
 
-		<ul>
-			<li class="header">Europe</li>
-			<li><a href="https://www.schneidersladen.de/en/elektrofon-klang.html">Schneidersladen</a></li>
-			<li><a href="https://www.midiamsterdam.nl/elektrofon-klang.html">MIDI Amsterdam</a></li>
-			<li><a href="https://londonmodular.co.uk/products/klang">London Modular</a></li>
-			<li><a href="https://www.studiosounds.ch/elektrofon-klang.html">StudioSounds</a></li>
-			<li><a href="https://escapefromnoise.com/modular/elektrofon-klang/">Escape From Noise</a></li>
-			<li><a href="https://www.signalsounds.com/elektrofon-klang-eurorack-4-voice-cv-quantiser-module">Signal Sounds</a></li>
-		</ul>
+			<div>
+				<table>
+					<tbody>
+						<tr>
+							<td>Width</td>
+							<td>14HP (70.8 mm)</td>
+						</tr>
+						<tr>
+							<td>Depth</td>
+							<td>20 mm <sup>(1)</sup></td>
+						</tr>
+						<tr>
+							<td>Power consumption</td>
+							<td>+12 V: ~23 mA <sup>(2)</sup><br/>-12 V: &lt;2 mA <sup>(2)</sup></td>
+						</tr>
+					</tbody>
+				</table>
 
-		<ul>
-			<li class="header">Australia</li>
-			<li><a href="https://www.tinshedmodular.com/store/p457/Klang_.html">Tin Shed Modular</a></li>
-		</ul>
+				<p><sup>(1)</sup> Measured from the back of the panel to the back of the power connector.<br/><sup>(2)</sup> At normal operation.</p>
+			</div>
+		</section>
 
-		<ul>
-			<li class="header">US</li>
-			<li><a href="https://www.ctrl-mod.com/products/klang">Control</a></li>
-			<li><a href="https://www.controlvoltage.net/elektrofon-klang.html">Control Voltage</a></li>
-			<li><a href="https://www.detroitmodular.com/elektrofon-klang.html">Detroit Modular</a></li>
-			<li><a href="https://www.perfectcircuit.com/elektrofon-klang.html">Perfect Circuit</a></li>
-		</ul>
+		<section class="guide">
+			<figure>
+				<div class="klang-front svg-container">
+				</div>
+				<figcaption style="width: 900%;">
+					<article id="panel-dummy"></article>
 
-		<small>Send me an <a href="mailto:hello@elektrofon.no">e-mail</a> if you want to become an Elektrofon retailer</small>
+					<article id="panel-1">
+						<div class="panel-content">
+							<p>Each of the four voices of <strong>Klang</strong> is color coded. The current state of a voice is given by its dial position on the display. You set the dial position by turning the same color knob, and if you press the knob whilst turing you can fine tune the position and go between semitones.</p>
+						</div>
+					</article>
 
-		<hr>
+					<article id="panel-2">
+						<div class="panel-content">
+							<p>The number on each dial indicates the octave of the voice. Keep turning the voice knob and you will see the octave indicator go up and down when you pass C on the display.</p>
+						</div>
+					</article>
 
-		<form>
-			<label>Sign up for the newsletter to stay up to date</label>
-			<input type="email" name="email" placeholder="Your email" required>
-			<input type="button" name="signup" value="Sign up">
-		</form>
-	</section>
+					<article id="panel-3">
+						<div class="panel-content">
+							<p>The big knob in the center is for browsing. On the display you can see the current chord index and the total chords in the sequence. Turn the browse knob to set the active chord.</p>
+							<p>A short click on the knob toggles pause. When <strong>Klang</strong> is paused it ignores step and reset triggers, letting you edit and browse in peace. This functionality is just a convenience – pulling out the trigger and reset cables would do the same.</p>
+							<p>If you press and hold the browse knob <strong>Klang</strong> enters tuning mode. This temporarily sets all voices to middle C so you can tune your oscillators.</p>
+						</div>
+					</article>
 
-	<section>
-		<div>
-			<!-- <img src="images/klang-specs.svg" alt="klang-specs"> -->
-			<svg width="100%" height="100%" viewBox="100 0 1200 1400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-				<g id="klang-mockup-front" transform="matrix(1,0,0,1,316,12)">
-					<g transform="matrix(1,-0,-0,1,-316,-12)">
-						<use xlink:href="#_Image1" x="316" y="12" width="768px" height="1376px"/>
-					</g>
-				</g>
-				<g transform="matrix(1,0,0,1,2.70808,1.622)">
-					<circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				</g>
-				<g transform="matrix(1,0,0,1,225.994,234.469)">
-					<circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				</g>
-				<g transform="matrix(1,0,0,1,225.884,547.673)">
-					<circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				</g>
-				<g transform="matrix(1,0,0,1,15.3398,629.987)">
-					<circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				</g>
-				<g transform="matrix(1,0,0,1,438.75,630.499)">
-					<circle cx="474.006" cy="194.858" r="78.481" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				</g>
-				<path d="M517.076,1083.45C473.761,1083.45 438.595,1048.29 438.595,1004.97C438.595,961.658 473.761,926.492 517.076,926.492C517.076,926.492 885.338,926.492 885.338,926.492C928.653,926.492 963.819,961.658 963.819,1004.97C963.819,1048.29 928.653,1083.45 885.338,1083.45L517.076,1083.45Z" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M424.522,1298.26C381.44,1297.98 346.548,1262.92 346.548,1219.78C346.548,1176.46 381.714,1141.3 425.029,1141.3L978.001,1141.3L978.508,1141.3C1021.59,1141.57 1056.48,1176.63 1056.48,1219.78C1056.48,1263.09 1021.32,1298.26 978.001,1298.26L425.029,1298.26L424.522,1298.26Z" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M427.142,135.653L381.206,89.717L211.702,89.717" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M648.909,369.771L606.833,327.695L211.702,327.695" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M648.909,682.881L489.346,523.318L211.702,523.318" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M451.299,756.199L377.981,682.881L211.702,682.881" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M949.866,756.199L986.525,719.54L1177.24,719.54" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M459.782,951.36L430.306,921.883L211.702,921.883" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<path d="M372.691,1161.31L268.986,1057.61L211.702,1057.61" style="fill:none;stroke:rgb(227,188,61);stroke-width:4px;"/>
-				<g transform="matrix(1,0,0,1,76.3205,-128.759)">
-					<text x="91.004px" y="241.443px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:72px;fill:rgb(227,188,61);">1</text>
-				</g>
-				<g transform="matrix(1,0,0,1,76.3205,106.818)">
-					<text x="91.004px" y="241.443px" style="font-size: 4em;fill:rgb(227,188,61);">2</text>
-				</g>
-				<g transform="matrix(1,0,0,1,76.3205,302.743)">
-					<text x="91.004px" y="241.443px" style="font-size: 4em;fill:rgb(227,188,61);">3</text>
-				</g>
-				<g transform="matrix(1,0,0,1,76.3205,465.583)">
-					<text x="91.004px" y="241.443px" style="font-size: 4em;fill:rgb(227,188,61);">4</text>
-				</g>
-				<g transform="matrix(1,0,0,1,76.3205,705.079)">
-					<text x="91.004px" y="241.443px" style="font-size: 4em;fill:rgb(227,188,61);">6</text>
-				</g>
-				<g transform="matrix(1,0,0,1,76.3205,838.841)">
-					<text x="91.004px" y="241.443px" style="font-size: 4em;fill:rgb(227,188,61);">7</text>
-				</g>
-				<g transform="matrix(1,0,0,1,1094.71,501.83)">
-					<text x="91.004px" y="241.443px" style="font-size: 4em;fill:rgb(227,188,61);">5</text>
-				</g>
-				<defs>
-					<image id="_Image1" width="768px" height="1376px" xlink:href="images/klang-mockup-front-bw.png?v=2"/>
-				</defs>
-			</svg>
-		</div>
+					<article id="panel-4">
+						<div class="panel-content">
+							<p>The <strong>+</strong> button adds a duplicate of the active chord and sets the new chord as the active chord.</p>
+							<p>The <strong>–</strong> button removes the active chord.</p>
+						</div>
+					</article>
 
-		<div>
-			<ol>
-				<li>Encoders controlling each of the 4 voices in the chord. Turning one knob will rotate the corresponding indicator on the OLED display – showing which CV value that particular channel will produce at its output.</li>
-				<li>The OLED display shows a realtime visualization of the 4 voices. The indicators points to a note on the clock face, and a number on each indicator lets you know the octave of the note. A status display at the bottom shows what chord is currently active, and the total chord count in the chord progression.</li>
-				<li>This encoder lets you browse the chords, and set the active chord. Holding this encoder down will activate «tuning mode» and set every note to middle C – letting you tune your oscilators easily. The module goes back to its previous state upon release.</li>
-				<li>The <i>-</i> button will delete the currently active chord.</li>
-				<li>The <i>+</i> button will add a chord after the active chord. The new chord is set as the active chord.</li>
-				<li>These are the control voltage inputs.<br><i>⇥</i> Takes a trigger or gate signal, and advances the chord progression according to the CV value of the <i>↤↦</i> input.<br><br><i>↤↦</i> Takes a bipolar CV signal, and decides the direction and amount of steps a step trigger will produce. 0V will result in no progression. The <i>↤↦</i> input is normalized to 1 step in the forwards direction.<br><br><i>⟳</i> Takes a bipolar CV, and transposes the current chord according to the voltage given.</li>
-				<li>These are the output CVs for each voice (note).</li>
-			</ol>
-		</div>
-	</section>
+					<article id="panel-5">
+						<div class="panel-content">
+							<p><strong>⇥</strong> Takes a trigger or gate signal and advances the chord progression according to the CV value of the <strong>↤↦</strong> input.</p>
+							<p><strong>↤↦</strong> Takes a bipolar CV signal and decides the direction and amount of steps a step trigger will produce. 0 V will result in no progression. The <strong>↤↦</strong> input is normalized to one step in the forwards direction.</p>
+						</div>
+					</article>
 
-	<script src="scripts/main.js?v=1.1"></script>
-</body>
+					<article id="panel-6">
+						<div class="panel-content">
+							<p><strong>⇤</strong> Takes a trigger or gate and immediatly resets the sequence to the beginning.</p>
+							<p><strong>⟳</strong> Takes a bipolar CV, and transposes the current chord according to the voltage given.</p>
+						</div>
+					</article>
+
+					<article id="panel-7">
+						<div class="panel-content">
+							<p>At the bottom we find the outputs for the four voices. The output CV signal ranges from -5 to +5 V.</p>
+						</div>
+					</article>
+
+					<article id="panel-dummy"></article>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="availability">
+			<h1>Availability</h1>
+			<p>The first version of <strong>KLANG</strong> was introduced on the market in 2019. It was on sale until the pandemic created unrecoverable supply chain issues – Resulting in no units being produced between 2021 and 2024.</p>
+			<p><strong>KLANG</strong> had to be redesigned from the ground up with all new components and with careful attention to not get into this position again. It took a while to get the funding needed for a redesign, and it also took a very long time to find the right manufacturing partners.</p>
+			<p>The upside to all this is that the new version of <strong>KLANG</strong> is an improvement on all fronts. Front and center is a larger display with twice the resolution, all new injection molded parts are much closer to the original vision, and the addition of a reset input makes <strong>KLANG</strong> a fully fledged four channel sequencer.</p>
+			<p>The new and improved <strong>KLANG</strong> will be available in a specialist store near you shortly.</p>
+		</section>
+
+		<footer>
+			<div class="logo"></div>
+			<p>© 2024 Elektrofon</p>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<script type="module" src="/main.js?v=2"></script>
+	</body>
 </html>
