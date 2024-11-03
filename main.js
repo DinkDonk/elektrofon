@@ -4,10 +4,7 @@ const stagger = '-=0.44';
 const ease = 'power1.inOut';
 
 let largestWindowDimension = () => Math.max(windowWidth, windowHeight);
-
-function randomPositiveOffset() {
-	return Math.random() * (largestWindowDimension() / 4) + (largestWindowDimension() / 3);
-}
+let randomPositiveOffset = () => Math.random() * (largestWindowDimension() / 4) + (largestWindowDimension() / 3);
 
 fetch('/assets/klang.svg')
 .then(response => response.text())
