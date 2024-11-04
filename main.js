@@ -11,8 +11,6 @@ if (window.screen.height * window.devicePixelRatio == 2234) {
 let largestWindowDimension = () => Math.max(windowWidth, windowHeight);
 let randomPositiveOffset = () => Math.random() * (largestWindowDimension() / 4) + (largestWindowDimension() / 3);
 
-console.log(window.devicePixelRatio, largestWindowDimension(), window.innerHeight, window.visualViewport.height, screen.availHeight, window.screen.height);
-
 fetch('/assets/klang.svg')
 .then(response => response.text())
 .then(data => {
@@ -211,4 +209,17 @@ fetch('/assets/klang.svg')
 			data = data.replace(/fill:#000/g, `fill:gainsboro`);
 			document.querySelector('footer .logo').innerHTML = data;
 		});
+});
+
+window.addEventListener('load', () => {
+	setTimeout(()  => {
+		const element = document.querySelector('.super-secret-no-bots-please');
+		let secret = `<a href="mailto:hello`;
+		secret += `@`;
+		secret += `elektrofon.no">`;
+		secret += `hello`;
+		secret += `@`;
+		secret += `elektrofon.no</a>`;
+		element.innerHTML = secret;
+	}, 2000)
 });

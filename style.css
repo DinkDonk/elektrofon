@@ -293,6 +293,7 @@ footer {
 	justify-items: center;
 	padding: 4em 2em;
 	color: gainsboro;
+	gap: 4em;
 }
 
 footer .logo {
@@ -302,4 +303,14 @@ footer .logo {
 
 footer p {
 	font-size: 1.3em;
+}
+
+footer a {
+	color: gainsboro;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: gold;
+	text-decoration: underline;
 }
