@@ -3,13 +3,8 @@ let windowHeight = window.innerHeight;
 const stagger = '-=0.44';
 const ease = 'power1.inOut';
 
-// Cheap fix for macbook pro XDR display
-if (window.screen.height * window.devicePixelRatio == 2234) {
-	windowHeight = windowHeight * window.devicePixelRatio;
-}
-
 let largestWindowDimension = () => Math.max(windowWidth, windowHeight);
-let randomPositiveOffset = () => Math.random() * (largestWindowDimension() / 4) + (largestWindowDimension() / 3);
+let randomPositiveOffset = () => Math.random() * 30 + 40;
 
 fetch('/assets/klang.svg')
 .then(response => response.text())
@@ -38,25 +33,25 @@ fetch('/assets/klang.svg')
 	});
 
 	tl0.addLabel('tl0 start')
-		.to('#logo', {y: -200, autoAlpha: 0, ease})
-		.from('[id^="Panel"]', {y: largestWindowDimension() / 3.5, x: largestWindowDimension() / 2, ease}, 0)
-		.from('#Glass', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Display', {y: randomPositiveOffset(), ease}, stagger)
-		.from('#Pluss-Button-Cap, #Pluss-Button-Base', {y: randomPositiveOffset()}, stagger)
-		.from('#Minus-Button-Cap, #Minus-Button-Base', {y: randomPositiveOffset()}, stagger)
-		.from('#Knob-1', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Knob-4', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Knob-2', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Knob-3', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Knob-5', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-1', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-2', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-3', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-4', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-5', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-6', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-7', {y: -randomPositiveOffset(), ease}, stagger)
-		.from('#Ring-8', {y: -randomPositiveOffset(), ease}, stagger)
+		.to('#logo', {y: '-8rem', autoAlpha: 0, ease})
+		.from('[id^="Panel"]', {y: '28rem', x: '50rem', ease}, 0)
+		.from('#Glass', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Display', {y: `${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Pluss-Button-Cap, #Pluss-Button-Base', {y: `${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Minus-Button-Cap, #Minus-Button-Base', {y: `${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Knob-1', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Knob-4', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Knob-2', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Knob-3', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Knob-5', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-1', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-2', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-3', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-4', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-5', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-6', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-7', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
+		.from('#Ring-8', {y: `-${randomPositiveOffset()}rem`, ease}, stagger)
 		.fromTo('#klang-container > img', {maskSize: '500% 500%', maskPosition: '100% 100%'}, {maskSize: '1000% 1000%', maskPosition: '50% 50%'}, '-=0.3')
 		.to('#klang-container svg', {opacity: 0}, '-=0.3')
 		.fromTo('#klang-container', {rotation: 10, scale: 1}, {rotation: 27, scale: 1.15, ease}, '-=0.45')

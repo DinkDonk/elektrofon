@@ -17,6 +17,7 @@ body {
 	overflow-x: hidden;
 	font-family: 'Booton';
 	min-height: 100vh;
+	font-size: 16px;
 }
 
 #intro {
