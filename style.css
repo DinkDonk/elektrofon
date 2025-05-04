@@ -194,7 +194,7 @@ section.availability {
 	max-height: 66vh;
 	overflow: hidden;
 	align-items: center;
-	justify-content: center;
+	justify-items: center;
 	padding-top: 0;
 	transition: 1s padding-top ease;
 }
