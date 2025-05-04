@@ -206,7 +206,7 @@ fetch('/assets/klang.svg')
 		});
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('load', async () => {
 	setTimeout(()  => {
 		const element = document.querySelector('.super-secret-no-bots-please');
 		let secret = `<a href="mailto:hello`;
@@ -217,4 +217,19 @@ window.addEventListener('load', () => {
 		secret += `elektrofon.no</a>`;
 		element.innerHTML = secret;
 	}, 2000)
+
+	const url = 'https://api.github.com/repos/elektrofon/klang-firmware/releases/latest';
+	const release = await fetch(url).then(_ => _.json());
+	const tagName = release.tag_name;
+	const publishedAt = new Date(release.published_at);
+	console.log(tagName, publishedAt);
+
+	const firmwareVersionElement = document.querySelector('.firmware-version');
+	const firmwareDateElement = document.querySelector('.firmware-date');
+	firmwareVersionElement.innerHTML = tagName;
+	firmwareDateElement.innerHTML = publishedAt.toLocaleDateString('en-GB', {
+		day: '2-digit',
+		month: '2-digit',
+		year: '2-digit'
+	});
 });

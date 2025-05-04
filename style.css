@@ -159,6 +159,39 @@ section.specifications p {
 	margin-top: 1em;
 }
 
+section.documents-and-downloads {
+	justify-self: center;
+	width: 100%;
+	max-width: 80em;
+}
+
+section.documents-and-downloads ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+	gap: 1em;
+	padding: 0;
+	margin: 0;
+	font-size: 1.3em;
+}
+
+section.documents-and-downloads a {
+	display: grid;
+	grid-template-columns: fit-content(2em) minmax(0, 1fr);
+	align-items: center;
+	gap: 1em;
+}
+
+section.documents-and-downloads a small {
+	font-weight: normal;
+}
+
+section.documents-and-downloads a svg {
+	width: auto;
+	height: 2em;
+	justify-self: center;
+}
+
 section.availability {
 	justify-self: center;
 	max-width: 80em;
@@ -250,6 +283,17 @@ p {
 
 p strong {
 	font-weight: 700;
+}
+
+a {
+	color: #040303;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #040303;
+	text-decoration: underline;
 }
 
 .table_component {
