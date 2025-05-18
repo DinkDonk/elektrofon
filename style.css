@@ -359,3 +359,43 @@ footer a:hover {
 	color: gold;
 	text-decoration: underline;
 }
+
+icon-traverse {
+	position: relative;
+	top: -0.2rem;
+	display: inline-block;
+	width: calc(1rem * 2.64);
+	height: 1rem;
+	vertical-align: middle;
+	background: url('/assets/icons/traverse.svg') no-repeat center;
+}
+
+icon-direction {
+	position: relative;
+	top: -0.2rem;
+	display: inline-block;
+	width: calc(1rem * 5);
+	height: 1rem;
+	vertical-align: middle;
+	background: url('/assets/icons/direction.svg') no-repeat center;
+}
+
+icon-reset {
+	position: relative;
+	top: -0.2rem;
+	display: inline-block;
+	width: calc(1rem * 2.64);
+	height: 1rem;
+	vertical-align: middle;
+	background: url('/assets/icons/reset.svg') no-repeat center;
+}
+
+icon-transpose {
+	position: relative;
+	top: -0.2rem;
+	display: inline-block;
+	width: calc(3.36rem * 1.095238);
+	height: 3.36rem;
+	vertical-align: middle;
+	background: url('/assets/icons/transpose.svg') no-repeat center;
+}
