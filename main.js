@@ -208,14 +208,16 @@ fetch('/assets/klang.svg')
 
 window.addEventListener('load', async () => {
 	setTimeout(()  => {
-		const element = document.querySelector('.super-secret-no-bots-please');
+		const elements = document.querySelectorAll('.super-secret-no-bots-please');
 		let secret = `<a href="mailto:hello`;
 		secret += `@`;
 		secret += `elektrofon.no">`;
 		secret += `hello`;
 		secret += `@`;
 		secret += `elektrofon.no</a>`;
-		element.innerHTML = secret;
+        elements.forEach(element => {
+            element.innerHTML = secret;
+        });
 	}, 2000)
 
 	const url = 'https://api.github.com/repos/elektrofon/klang-firmware/releases/latest';

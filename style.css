@@ -195,6 +195,12 @@ section.documents-and-downloads a svg {
 section.availability {
 	justify-self: center;
 	max-width: 80em;
+	margin-bottom: 4em;
+}
+
+section.retailers {
+	justify-self: center;
+	max-width: 80em;
 	margin-bottom: 8em;
 }
 
