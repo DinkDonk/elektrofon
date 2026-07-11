@@ -277,6 +277,11 @@ h1 {
 	font-weight: 700;
 }
 
+h2 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
 p {
 	font-size: 2em;
 }
@@ -398,4 +403,26 @@ icon-transpose {
 	height: 3.36rem;
 	vertical-align: middle;
 	background: url('/assets/icons/transpose.svg') no-repeat center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	font-size: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+ul ul {
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+li a {
+    font-weight: normal;
 }
