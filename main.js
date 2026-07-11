@@ -220,6 +220,11 @@ window.addEventListener('load', async () => {
         });
 	}, 2000)
 
+    const yearElements = document.querySelectorAll('.year');
+    yearElements.forEach(element => {
+        element.innerHTML = (new Date()).getFullYear();
+    });
+
 	const url = 'https://api.github.com/repos/elektrofon/klang-firmware/releases/latest';
 	const release = await fetch(url).then(_ => _.json());
 	const tagName = release.tag_name;
