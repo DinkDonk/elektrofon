@@ -27,6 +27,8 @@ body {
 	background-color: gainsboro;
 }
 
+
+
 #logo {
 	position: absolute;
 	top: 45%;
@@ -431,4 +433,8 @@ ul ul {
 
 li a {
     font-weight: normal;
+}
+
+.hidden-loading {
+    opacity: 0;
 }

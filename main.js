@@ -198,6 +198,11 @@ fetch('/assets/klang.svg')
 			});
 		});
 
+    const hiddenLoadingElements = document.querySelectorAll('.hidden-loading')
+    hiddenLoadingElements.forEach(element => {
+        element.classList.remove('hidden-loading');
+    });
+
 	fetch('/assets/elektrofon.svg')
 		.then(response => response.text())
 		.then(data => {
@@ -207,6 +212,7 @@ fetch('/assets/klang.svg')
 });
 
 window.addEventListener('load', async () => {
+    // Fill in emails to avoid scrapers
 	setTimeout(()  => {
 		const elements = document.querySelectorAll('.super-secret-no-bots-please');
 		let secret = `<a href="mailto:hello`;
@@ -220,11 +226,14 @@ window.addEventListener('load', async () => {
         });
 	}, 2000)
 
+    // Fill in copyright year
     const yearElements = document.querySelectorAll('.year');
+    const year = (new Date()).getFullYear();
     yearElements.forEach(element => {
-        element.innerHTML = (new Date()).getFullYear();
+        element.innerHTML = year;
     });
 
+    // Get latest firmware release
 	const url = 'https://api.github.com/repos/elektrofon/klang-firmware/releases/latest';
 	const release = await fetch(url).then(_ => _.json());
 	const tagName = release.tag_name;
